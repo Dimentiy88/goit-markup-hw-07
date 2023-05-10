@@ -180,10 +180,12 @@ img {
 .header-container {
   padding: 0 15px;
   margin: 0 auto;
-  width: 1158px;
+  max-width: 1158px;
   display: flex;
   align-items: center;
   height: 70px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .header-nav {
@@ -191,7 +193,11 @@ img {
   align-items: center;
   margin-right: auto;
 }
-
+@media only screen and (max-width: 768px) {
+  .header-nav {
+    margin-right: 0;
+  }
+}
 .header-page {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -210,13 +216,15 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-white);
-  max-width: 320px;
+
   margin: 0 auto 48px;
 }
 /* Modile title */
 @media only screen and (min-width: 768px) {
   .title {
     font-size: 56px;
+    line-height: 60px;
+    max-width: 496px;
   }
 }
 
