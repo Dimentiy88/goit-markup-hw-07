@@ -61,6 +61,7 @@ img {
   /* Phone styles & > */
   min-width: 320px;
   max-width: 428px;
+  height: 70px;
   /* margin: 0 auto; */
   /* padding: 0 16px; */
   margin-left: auto;
@@ -958,11 +959,12 @@ img {
 }
 
 .mobile-menu {
-  padding: 0;
+  /* padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: auto;
+  margin-bottom: auto; */
   display: block;
+  margin-bottom: 284px;
 }
 
 .mobile-menu .link {
@@ -975,4 +977,37 @@ img {
   text-transform: capitalize;
   padding-bottom: 40px;
   text-decoration: none;
+}
+.mobile-contacts {
+  display: block;
+}
+.mobile-phone {
+  display: inline-block;
+  margin-bottom: 40px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: #4d5ae5;
+}
+.mobile-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  line-height: 0;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background-color var(--transition-duration-and-func);
 }
