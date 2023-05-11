@@ -47,6 +47,16 @@ img {
   display: flex;
   gap: 40px;
 }
+@media only screen and (min-width: 768px) {
+  .page-list {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .page-list {
+    display: flex;
+  }
+}
 
 .button-link,
 .button-link-btn,
@@ -69,6 +79,12 @@ img {
   outline: 2px solid red;
   outline-offset: -2px;
 }
+@media screen and (min-width: 428px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* Tablet styles & > */
 @media only screen and (min-width: 768px) {
@@ -78,9 +94,11 @@ img {
 }
 
 /* Desktop styles & >*/
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1440px) {
   .container {
     max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -93,11 +111,20 @@ img {
   text-transform: uppercase;
   color: var(--color-iris);
   letter-spacing: 0.03em;
-  margin-right: 76px;
 
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media only screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 120px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .header-logo {
+    margin-right: 76px;
+  }
 }
 
 .nav-list {
@@ -211,20 +238,29 @@ img {
   color: var(-color-white);
 }
 .title {
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 72px;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-white);
-
-  margin: 0 auto 48px;
 }
-/* Modile title */
+
 @media only screen and (min-width: 768px) {
   .title {
     font-size: 56px;
-    line-height: 60px;
     max-width: 496px;
+    margin-bottom: 36px;
+    line-height: 1.07;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero-title {
+    margin-bottom: 48px;
   }
 }
 
@@ -976,7 +1012,7 @@ img {
   list-style: none;
   margin-bottom: auto; */
   display: block;
-  margin-bottom: 284px;
+  margin-bottom: auto;
 }
 
 .mobile-menu .link {
@@ -989,16 +1025,21 @@ img {
   text-transform: capitalize;
   padding-bottom: 40px;
   text-decoration: none;
+  color: var(--color-naviblue);
 }
+.mobile-list.current {
+  color: var(--color-ocean);
+}
+
 .mobile-contacts {
   display: block;
+  margin-bottom: 48px;
 }
 .mobile-phone {
   display: inline-block;
   margin-bottom: 40px;
+  width: 353px;
 
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
@@ -1007,6 +1048,18 @@ img {
 
   color: #4d5ae5;
 }
+
+.mobile-email {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #434455;
+  letter-spacing: 0.02em;
+}
+.socials-media-menu {
+  gap: 56px;
+}
+
 .mobile-close-btn {
   position: absolute;
   top: 24px;
