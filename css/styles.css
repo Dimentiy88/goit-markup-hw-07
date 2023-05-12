@@ -655,6 +655,10 @@ img {
   }
 }
 .section-footer {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-items: center;
   margin-right: 120px;
 }
 
@@ -670,6 +674,10 @@ img {
 .social-footer {
   display: inline-block;
   gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 .soc-link-footer:hover,
 .soc-link-footer:focus {
