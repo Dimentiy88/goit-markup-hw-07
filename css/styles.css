@@ -79,12 +79,13 @@ img {
   outline: 2px solid red;
   outline-offset: -2px;
 }
-@media screen and (min-width: 428px) {
+/* @media screen and (min-width: 428px) {
   .container {
+    width: 428px;
     margin-left: auto;
     margin-right: auto;
   }
-}
+} */
 
 /* Tablet styles & > */
 @media only screen and (min-width: 768px) {
@@ -94,7 +95,7 @@ img {
 }
 
 /* Desktop styles & >*/
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding-left: 15px;
@@ -207,7 +208,7 @@ img {
 .header-container {
   padding: 0 15px;
   margin: 0 auto;
-  max-width: 1158px;
+  /* max-width: 1158px; */
   display: flex;
   align-items: center;
   height: 70px;
@@ -322,11 +323,6 @@ img {
 .facts-container {
   justify-content: space-between;
   padding: 120px 0;
-}
-
-.item {
-  width: calc((100% - (24px * 3)) / 4);
-  background-color: var(--color-white);
 }
 
 .fact-title {
@@ -453,9 +449,37 @@ img {
   gap: 24px;
 }
 .section-list {
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
   display: flex;
 }
+@media only screen and (min-width: 768px) {
+  .section-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .section-list {
+    gap: 24px;
+  }
+}
+.item {
+  background-color: var(--color-white);
+}
+@media only screen and (min-width: 768px) {
+  .item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .item {
+    width: calc((100% - (24px * 3)) / 4);
+  }
+}
+
 .container-team {
   padding-bottom: 120px;
 }
@@ -517,6 +541,8 @@ img {
 
 .bgr-section {
   max-width: 1440px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -614,6 +640,11 @@ img {
   border-radius: 4px;
   flex: none;
   margin-bottom: 8px;
+}
+@media only screen and (max-width: 1157px) {
+  .title-icons {
+    display: none;
+  }
 }
 /* Customers icons */
 .customers-section {
