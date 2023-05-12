@@ -326,13 +326,28 @@ img {
 }
 
 .fact-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
   letter-spacing: 0.02em;
   color: var(--color-naviblue);
   margin-bottom: 8px;
   padding: 0;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .fact-title {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .fact-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
 }
 
 .facts {
@@ -346,6 +361,17 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-slate);
+
+  font-weight: 500;
+}
+@media only screen and (min-width: 768px) {
+  .fact-descr {
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .fact-descr {
+    font-weight: 400;
+  }
 }
 
 .title-second {
@@ -446,8 +472,24 @@ img {
   margin-bottom: 72px;
 }
 .list-item {
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
+@media only screen and (min-width: 768px) {
+  .list-item {
+    flex-direction: row;
+    row-gap: 64px;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .list-item {
+  }
+}
+
 .section-list {
   flex-direction: column;
   gap: 72px;
@@ -484,11 +526,21 @@ img {
   padding-bottom: 120px;
 }
 
+@media only screen and (max-width: 1157px) {
+  .container-team {
+    display: none;
+  }
+}
+
 .worker {
   text-align: center;
   padding: 32px 0px;
   border-radius: 0px 0px 4px 4px;
 }
+.employees {
+  text-align: center;
+}
+
 /* FOOTER */
 .footer-logo {
   font-family: "Raleway", sans-serif;
