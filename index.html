@@ -136,14 +136,37 @@
           <h2 class="title-second_three_four">What are we doing</h2>
           <ul class="list-item list">
             <li class="item-doing">
-              <img src="./images/image-1.jpg" alt="Computer" width="360" />
-            </li>
-            <li class="item-doing">
-              <img src="./images/image-2.jpg" alt="Phone" width="360" />
+              <img
+                srcset="
+                  ./images/Devices/Computer_@1x.jpg 360w,
+                  ./images/Devices/Computer_@2x.jpg 720w
+                "
+                sizes="(min-width: 1158px) 360px, (min-width: 768px) 360px, (min-width: 428px) 360px, 100vw"
+                src="./images/Devices/Computer_@1x.jpg"
+                alt="Computer"
+                width="360"
+              />
             </li>
             <li class="item-doing">
               <img
-                src="./images/image-3.jpg"
+                srcset="
+                  ./images/Devices/Telephone_@1x.jpg 360w,
+                  ./images/Devices/Telephone_@2x.jpg 720w
+                "
+                sizes="(min-width: 1158px) 360px, (min-width: 768px) 360px, (min-width: 428px) 360px, 100vw"
+                src="./images/Devices/Telephone_@1x.jpg"
+                alt="Phone"
+                width="360"
+              />
+            </li>
+            <li class="item-doing">
+              <img
+                srcset="
+                  ./images/Devices/Laptop_@1x.jpg 360w,
+                  ./images/Devices/Laptop_@2x.jpg 720w
+                "
+                sizes="(min-width: 1158px) 360px, (min-width: 768px) 360px, (min-width: 428px) 360px, 100vw"
+                src="./images/Devices/Laptop_@1x.jpg"
                 alt="laptop and phone"
                 width="360"
               />

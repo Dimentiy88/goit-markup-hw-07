@@ -195,6 +195,12 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .address {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   .address {
@@ -324,32 +330,28 @@ img {
 
 .facts-container {
   justify-content: space-between;
-  padding: 120px 0;
+  padding: 96px 0;
+}
+@media only screen and (min-width: 768px) {
+  .facts-container {
+    padding: 96px 0;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .facts-container {
+    padding: 120px 0;
+  }
 }
 
 .fact-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-naviblue);
   margin-bottom: 8px;
   padding: 0;
   text-align: center;
-}
-@media only screen and (min-width: 768px) {
-  .fact-title {
-    text-align: left;
-  }
-}
-@media only screen and (min-width: 1158px) {
-  .fact-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: left;
-  }
 }
 
 .facts {
@@ -538,9 +540,6 @@ img {
   text-align: center;
   padding: 32px 0px;
   border-radius: 0px 0px 4px 4px;
-}
-.employees {
-  text-align: center;
 }
 
 /* FOOTER */
@@ -732,9 +731,9 @@ img {
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-container {
+    width: 582px;
     flex-direction: column;
     justify-content: center;
-    padding: 0 108px 0 108px;
   }
 }
 .section-footer {
@@ -830,7 +829,6 @@ img {
 }
 @media only screen and (min-width: 768px) {
   .customers {
-    padding: 0 100px;
     column-gap: 24px;
   }
 }
@@ -878,7 +876,11 @@ img {
   color: var(--color-ocean);
   border-color: var(--color-ocean);
 }
-
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .customers-container {
+    width: 582px;
+  }
+}
 .customers-text {
   font-size: 36px;
   line-height: 1.1;
@@ -922,7 +924,7 @@ img {
   opacity: 1;
 
   width: 408px;
-  min-height: 584px;
+  height: 584px;
   padding: 72px 24px 24px 24px;
 
   background-color: #fcfcfc;
@@ -932,6 +934,14 @@ img {
     drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
 
   transition: transform 200ms ease-in 200ms, opacity 200ms ease-in 200ms;
+}
+
+@media only screen and (max-width: 427px) {
+  .modal {
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: scroll;
+  }
 }
 .modal-close-btn {
   position: absolute;
@@ -1340,6 +1350,11 @@ img {
 
   color: #4d5ae5;
 }
+@media only screen and (max-width: 320px) {
+  .mobile-phone {
+    font-size: 25px;
+  }
+}
 
 .mobile-email {
   font-weight: 500;
@@ -1350,6 +1365,11 @@ img {
 }
 .socials-media-menu {
   gap: 56px;
+}
+@media only screen and (max-width: 320px) {
+  .socials-media-menu {
+    gap: 25px;
+  }
 }
 
 .mobile-close-btn {
