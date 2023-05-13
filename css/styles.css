@@ -39,6 +39,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .list {
   list-style: none;
@@ -591,20 +593,92 @@ img {
   margin-bottom: 72px;
 }
 
-.bgr-section {
-  max-width: 1440px;
-  padding-top: 112px;
-  padding-bottom: 112px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office-bgr.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+@media only screen and (max-width: 428px) {
+  .bgr-section {
+    /* max-width: 1440px; */
+    padding-top: 112px;
+    padding-bottom: 112px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bgr/people-office_mob@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .bgr-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bgr/people-office_mob@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 429px) and (max-width: 768px) {
+  .bgr-section {
+    /* max-width: 1440px; */
+    padding-top: 112px;
+    padding-bottom: 112px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bgr/people-office_tab@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .bgr-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bgr/people-office_tab@2x.jpg);
+    }
+  }
+}
+@media only screen and (min-width: 769px) {
+  .bgr-section {
+    /* max-width: 1440px; */
+    padding-top: 188px;
+    padding-bottom: 188px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bgr/people-office\ 1_desc@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .bgr-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bgr/people-office\ 1_desc@2x.jpg);
+    }
+  }
 }
 
 .our-work:hover,
@@ -1023,7 +1097,7 @@ img {
 .modal-form-agreement-link {
   color: #4d5ae5;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .subscribe-form-field {
     width: 100%;
   }
@@ -1032,7 +1106,7 @@ img {
 .footer-form {
   display: inline-block;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .footer-form {
     width: 100%;
   }
@@ -1053,7 +1127,7 @@ img {
 .section-footer-wrap {
   display: flex;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .section-footer-wrap {
     flex-direction: column;
     gap: 72px;
@@ -1070,7 +1144,7 @@ img {
   flex-wrap: wrap;
   align-items: end;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .subscribe-form {
     justify-content: center;
   }
@@ -1090,7 +1164,7 @@ img {
   margin-bottom: 16px;
   display: flex;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .field-name {
     justify-content: center;
   }
@@ -1112,7 +1186,7 @@ img {
   outline: 2px solid transparent;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .field-form-input {
     width: 100%;
     margin-bottom: 16px;

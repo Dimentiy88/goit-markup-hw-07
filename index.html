@@ -158,7 +158,12 @@
           <ul class="list-item list">
             <li class="team-item">
               <img
-                src="./images/photo/Mark_mob@1x.jpg"
+                srcset="
+                  ./images/photo/Mark_264@1x.jpg 264w,
+                  ./images/photo/Mark_528@2x.jpg 528w
+                "
+                sizes="(min-width: 1158px) 264px, (min-width: 768px) 264px, (min-width: 428px) 264px, 100vw"
+                src="./images/photo/Mark_264@1x.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -222,10 +227,15 @@
               </div>
             </li>
             <li class="team-item">
-              <img 
-              src="./images/photo/Tom_mob@1x.jpg" 
-              alt="Tom Ford" 
-              width="264" 
+              <img
+                srcset="
+                  ./images/photo/Tom_264@1x.jpg 264w,
+                  ./images/photo/Tom_528@2x.jpg 528w
+                "
+                sizes="(min-width: 1158px) 264px, (min-width: 768px) 264px, (min-width: 428px) 264px, 100vw"
+                src="./images/photo/Tom_264@1x.jpg"
+                alt="Tom Ford"
+                width="264"
               />
               <div class="worker">
                 <h3 class="fact-title employees">Tom Ford</h3>
@@ -288,7 +298,12 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/photo/Camila_mob@1x.jpg"
+                srcset="
+                  ./images/photo/Camila_264@1x.jpg 264w,
+                  ./images/photo/Camila_528@2x.jpg 528w
+                "
+                sizes="(min-width: 1158px) 264px, (min-width: 768px) 264px, (min-width: 428px) 264px, 100vw"
+                src="./images/photo/Camila_264@1x.jpg"
                 alt="Camila Garcia"
                 width="264"
               />
@@ -353,7 +368,12 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/photo/Daniel_mob@1x.jpg"
+                srcset="
+                  ./images/photo/Daniel_264@1x.jpg 264w,
+                  ./images/photo/Daniel_528@2x.jpg 528w
+                "
+                sizes="(min-width: 1158px) 264px, (min-width: 768px) 264px, (min-width: 428px) 264px, 100vw"
+                src="./images/photo/Daniel_264@1x.jpg"
                 alt="Daniel Wilson"
                 width="264"
               />
@@ -509,92 +529,88 @@
     <!-- Footer section -->
     <footer class="footer bottom">
       <div class="footer-container container">
-      <div class="section-footer-wrap">
+        <div class="section-footer-wrap">
           <div class="section-footer">
-          <a class="footer-logo link" href="./index.html"
-            >Web<span class="name-footer">Studio</span></a
-          >
-          <p class="text-bottom">
-            Increase the flow of customers and <br />
-            sales for your business with digital <br />
-            marketing & growth solutions.
-          </p>
+            <a class="footer-logo link" href="./index.html"
+              >Web<span class="name-footer">Studio</span></a
+            >
+            <p class="text-bottom">
+              Increase the flow of customers and <br />
+              sales for your business with digital <br />
+              marketing & growth solutions.
+            </p>
+          </div>
+          <div class="social-footer list">
+            <p class="text-social">Social media</p>
+            <ul class="socials-media list">
+              <li class="socials-item">
+                <a
+                  class="socials-link soc-link-footer link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="icon-instagram"
+                >
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link soc-link-footer link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="icon-twitter"
+                >
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link soc-link-footer link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="icon-facebook"
+                >
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link soc-link-footer link"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="icon-linkedin"
+                >
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="social-footer list">
-          <p class="text-social">Social media</p>
-          <ul class="socials-media list">
-            <li class="socials-item">
-              <a
-                class="socials-link soc-link-footer link"
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="icon-instagram"
-              >
-                <svg class="socials-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a
-                class="socials-link soc-link-footer link"
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="icon-twitter"
-              >
-                <svg class="socials-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a
-                class="socials-link soc-link-footer link"
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="icon-facebook"
-              >
-                <svg class="socials-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a
-                class="socials-link soc-link-footer link"
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="icon-linkedin"
-              >
-                <svg class="socials-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
         <div class="footer-form list">
           <form class="subscribe-form" name="Subscribe_form">
             <div class="subscribe-form-field">
-              <label 
-                class="field-name" 
-                for="user-email">
-                Subscribe
-              </label>
-            <input
+              <label class="field-name" for="user-email"> Subscribe </label>
+              <input
                 class="field-form-input"
                 type="email"
                 name="user-email"
-                id="user-email"               
+                id="user-email"
                 placeholder="E-mail"
                 required
               />
-              </div>
+            </div>
             <button class="subscribe-btn" type="submit">
               Subscribe
               <svg class="sub-btn" width="24" height="24">
@@ -699,21 +715,21 @@
     <!--Mobile menu  -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="mobile-close-btn js-close-menu">
-          <svg class="modal-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+        <svg class="modal-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-close"></use>
         </svg>
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        >
+        </path>
       </button>
 
       <ul class="mobile-menu list">
         <li><a href="" class="mobile-list current link">Studio</a></li>
-        <li><a href="" class="mobile-list  link">portfolio</a></li>
-        <li><a href="" class="mobile-list  link">Contacts</a></li>
+        <li><a href="" class="mobile-list link">portfolio</a></li>
+        <li><a href="" class="mobile-list link">Contacts</a></li>
       </ul>
 
       <ul class="mobile-contacts list">
@@ -725,7 +741,7 @@
         </li>
       </ul>
 
-      <ul class="socials-media-menu list ">
+      <ul class="socials-media-menu list">
         <li class="socials-item">
           <a
             class="socials-link soc-link-footer link"
