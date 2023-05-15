@@ -153,6 +153,11 @@ img {
     display: none;
   }
 }
+@media only screen and (max-width: 767px) {
+  .header-list {
+    display: none;
+  }
+}
 
 .current {
   color: var(--color-ocean);
@@ -310,6 +315,11 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media only screen and (max-width: 767px) {
+  .button-btn {
+    padding: 8px 16px;
+  }
+}
 .button-link:hover,
 .button-link:focus {
   color: var(--color-white);
@@ -345,13 +355,21 @@ img {
 
 .fact-title {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--color-naviblue);
   margin-bottom: 8px;
   padding: 0;
   text-align: center;
+}
+@media only screen and (min-width: 1158px) {
+  .fact-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+  }
 }
 
 .facts {
@@ -360,18 +378,13 @@ img {
 }
 
 .fact-descr {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-slate);
+}
 
-  font-weight: 500;
-}
-@media only screen and (min-width: 768px) {
-  .fact-descr {
-  }
-}
 @media only screen and (min-width: 1158px) {
   .fact-descr {
     font-weight: 400;
@@ -390,9 +403,15 @@ img {
 
 .team {
   background-color: var(--color-cloud);
-  padding: 120px 0;
+  padding: 96px 0;
 }
-.fact-descr-team {
+@media only screen and (min-width: 1158px) {
+  .team {
+    padding: 120px 0;
+  }
+}
+
+.team .fact-descr-team {
   margin-bottom: 8px;
 }
 
@@ -582,14 +601,30 @@ img {
 }
 
 .card-section {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media only screen and (min-width: 1158px) {
+  .card-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
 }
 
 .botton-list {
-  gap: 24px;
-  justify-content: center;
-  margin-bottom: 72px;
+  justify-content: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 16px;
+  padding-bottom: 48px;
+}
+@media only screen and (min-width: 1158px) {
+  .botton-list {
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 72px;
+  }
 }
 
 @media only screen and (max-width: 428px) {
