@@ -78,8 +78,8 @@ img {
   padding-left: 16px;
   padding-right: 16px;
 
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 /* @media screen and (min-width: 428px) {
   .container {
@@ -596,10 +596,13 @@ img {
 
 @media only screen and (min-width: 768px) {
   .examples-list {
+    flex-direction: inherit;
+    column-gap: 16px;
   }
 }
 @media only screen and (min-width: 1158px) {
   .examples-list {
+    flex-direction: inherit;
     column-gap: 24px;
     row-gap: 48px;
     flex-wrap: wrap;
