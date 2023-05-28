@@ -78,8 +78,8 @@ img {
   padding-left: 16px;
   padding-right: 16px;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 /* @media screen and (min-width: 428px) {
   .container {
